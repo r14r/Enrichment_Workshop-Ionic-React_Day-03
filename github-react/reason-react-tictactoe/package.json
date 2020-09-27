@@ -1,0 +1,34 @@
+{
+  "name": "reason-react-tictactoe",
+  "version": "1.0.0",
+  "description": "Tic-tac-toe implemented using Reason and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bsb -make-world -w",
+    "build": "webpack -w",
+    "clean": "bsb -clean-world",
+    "docs": "bsb -make-world && webpack && mkdir -p docs && cp bundledOutputs/bundle.js docs/bundle.js && cp src/styles.css docs/styles.css && cp src/index.html docs/index.html && sed -i '' 's/\\.\\.\\/bundledOutputs\\/bundle\\.js/\\.\\/bundle\\.js/g' docs/index.html"
+  },
+  "keywords": [
+    "react",
+    "reasonml",
+    "reason-react"
+  ],
+  "author": "Jan Poeschko <jan@poeschko.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poeschko/reason-react-tictactoe.git"
+  },
+  "dependencies": {
+    "bs-glamor": "^0.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "reason-react": "https://github.com/reasonml/reason-react.git"
+  },
+  "devDependencies": {
+    "bs-platform": "^1.7.3",
+    "webpack": "^1.14.0"
+  }
+}
