@@ -1,0 +1,24 @@
+{
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4,
+	"editor.useTabStops": true,
+	"prettier.tabWidth": 4,
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"files.exclude": {
+		"**/.env.d": true,
+		"**/.env": true,
+		"**/node_modules": true,
+		"**/package-lock.json": true,
+		"**/yarn.lock": true,
+		"**/.gitignore": true,
+		"**/android": true,
+		"**/.gradle": true,
+		"**/*.test.tsx": true,
+		"**/.idea": true,
+		"**/.idea.*": true,
+		"**/.ionic": true,
+		"**/.ionic.*": true,
+		"Enrichment.code-workspace": true
+	}
+}
